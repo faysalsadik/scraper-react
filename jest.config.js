@@ -1,0 +1,10 @@
+// Jest configuration file
+/** @type {import('ts-jest').JestConfigWithTsJest} */
+module.exports = {
+  preset: 'ts-jest',
+  testEnvironment: 'jsdom',
+  testMatch: ['**/tests/**/*.test.ts'],
+  transform: {
+    '^.+\\.tsx?$': ['ts-jest', { isolatedModules: true }],
+  },
+};

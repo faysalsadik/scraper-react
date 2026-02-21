@@ -1,48 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap");
+
 :root {
-    --color-primary: #3b82f6;
-    --color-primary-hover: #2563eb;
-    --color-primary-light: #eff6ff;
-    --color-success: #16a34a;
-    --color-success-light: #f0fdf4;
-    --color-danger: #dc2626;
-    --color-danger-light: #fef2f2;
+    /* Premium Indigo/Violet Theme */
+    --color-primary: #6366f1;
+    --color-primary-hover: #4f46e5;
+    --color-primary-light: #e0e7ff;
+    --color-primary-dark: #3730a3;
+
+    --color-success: #10b981;
+    --color-success-light: #d1fae5;
+    --color-danger: #ef4444;
+    --color-danger-light: #fee2e2;
     --color-warning: #f59e0b;
-    --color-warning-light: #fffbeb;
-    --color-text: #111111;
-    --color-text-secondary: #6b7280;
-    --color-text-muted: #9ca3af;
-    --color-bg: #ffffff;
-    --color-bg-secondary: #f9fafb;
-    --color-bg-tertiary: #f3f4f6;
-    --color-bg-hover: #f5f5f5;
-    --color-border: #e5e7eb;
-    --color-border-focus: #3b82f6;
+    --color-warning-light: #fef3c7;
+
+    --color-text: #0f172a;
+    --color-text-secondary: #475569;
+    --color-text-muted: #94a3b8;
+
+    --color-bg: #f8fafc;
+    --color-bg-secondary: #ffffff;
+    --color-bg-tertiary: #f1f5f9;
+    --color-bg-hover: #f1f5f9;
+
+    --color-border: #e2e8f0;
+    --color-border-focus: #818cf8;
+
     --space-xs: 4px;
     --space-sm: 8px;
     --space-md: 12px;
     --space-lg: 16px;
     --space-xl: 24px;
     --space-2xl: 32px;
-    --font-family: "Rubik", sans-serif;
-    --font-size-xs: 11px;
-    --font-size-sm: 12px;
-    --font-size-md: 13px;
-    --font-size-lg: 15px;
-    --font-size-xl: 18px;
-    --font-size-2xl: 22px;
+
+    --font-family: "Inter", system-ui, -apple-system, sans-serif;
+    --font-display: "Outfit", var(--font-family);
+
+    --font-size-xs: 12px;
+    --font-size-sm: 13px;
+    --font-size-md: 14px;
+    --font-size-lg: 16px;
+    --font-size-xl: 20px;
+    --font-size-2xl: 24px;
+
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
-    --radius-sm: 4px;
-    --radius-md: 6px;
-    --radius-lg: 10px;
+
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
     --radius-full: 9999px;
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
-    --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.08);
-    --transition-fast: 0.12s ease;
-    --transition-normal: 0.18s ease;
+
+    /* Modern soft shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+    --shadow-md:
+        0 4px 6px -1px rgba(15, 23, 42, 0.05), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+    --shadow-lg:
+        0 10px 15px -3px rgba(15, 23, 42, 0.08),
+        0 4px 6px -4px rgba(15, 23, 42, 0.04);
+    --shadow-glow: 0 0 15px rgba(99, 102, 241, 0.3);
+
+    --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 *,
@@ -99,39 +120,42 @@ ol {
     padding: var(--space-sm) var(--space-lg);
     border-radius: var(--radius-md);
     font-size: var(--font-size-md);
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-semibold);
     transition: all var(--transition-fast);
     border: 1px solid transparent;
     white-space: nowrap;
+    font-family: var(--font-display);
 }
 
 .btn:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+    transform: none !important;
+    box-shadow: none !important;
 }
 
 .btn-primary {
     color: #ffffff;
-    background: var(--color-primary);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
     border: none;
-    border-bottom: 4px solid #1d4ed8;
     border-radius: 12px;
     gap: 10px;
     padding: 14px 28px;
     font-size: 15px;
-    font-weight: 600;
     position: relative;
     cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.4), 0 2px 4px -2px rgba(99, 102, 241, 0.4);
 }
 
 .btn-primary:hover:not(:disabled) {
-    background: var(--color-primary-hover);
-    border-bottom-color: #1e40af;
+    background: linear-gradient(135deg, var(--color-primary-hover), var(--color-primary-dark));
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
 }
 
 .btn-primary:active:not(:disabled) {
-    border-bottom-width: 2px;
-    margin-top: 2px;
+    transform: translateY(0px) scale(0.98);
+    box-shadow: 0 2px 4px -2px rgba(99, 102, 241, 0.4);
 }
 
 .btn-secondary {

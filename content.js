@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  const ur = "ncws-highlight-host";
+  const ur = "swwc-highlight-host";
   let Pt = null;
   let ee = null;
   let re = [];
@@ -115,7 +115,7 @@
               }
             }
           }
-        } catch {}
+        } catch { }
       }
       a = s;
       t++;
@@ -212,14 +212,14 @@
           if (document.querySelectorAll(c).length === 1) {
             return c;
           }
-        } catch {}
+        } catch { }
       }
       const i = `${a}.${t.join(".")}`;
       try {
         if (document.querySelectorAll(i).length === 1) {
           return i;
         }
-      } catch {}
+      } catch { }
     }
     let o = e;
     const s = [];
@@ -248,7 +248,7 @@
         if (r > 1 && r < 500) {
           return s;
         }
-      } catch {}
+      } catch { }
     }
     if (t.length > 0) {
       const o = `${a}.${t.join(".")}`;
@@ -257,7 +257,7 @@
         if (s > 1 && s < 500) {
           return o;
         }
-      } catch {}
+      } catch { }
     }
     return null;
   }
@@ -361,7 +361,7 @@
     }
   }
   const kr = ".picker-toolbar{font-family:Rubik,sans-serif;font-size:13px;line-height:1.4;color:#fff}.picker-toolbar-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background:#1e1b4b;border-top:2px solid #4F46E5;box-shadow:0 -4px 12px #0000004d}.picker-info{display:flex;align-items:center;gap:12px;flex:1;min-width:0;overflow:hidden}.picker-label{white-space:nowrap;flex-shrink:0}.picker-label strong{color:#a5b4fc}.picker-selector{font-family:SF Mono,Monaco,monospace;font-size:11px;background:#ffffff1a;padding:2px 8px;border-radius:4px;max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.picker-count{background:#4f46e5;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;white-space:nowrap;flex-shrink:0}.picker-hint{color:#a5b4fc;font-style:italic}.picker-actions{display:flex;gap:8px;flex-shrink:0;margin-left:12px}.picker-btn{padding:6px 16px;border:none;border-radius:6px;font-size:13px;font-weight:500;cursor:pointer;transition:background .15s ease}.picker-btn-confirm{background:#4f46e5;color:#fff}.picker-btn-confirm:hover{background:#4338ca}.picker-btn-cancel{background:#ffffff26;color:#fff}.picker-btn-cancel:hover{background:#ffffff40}";
-  const Sr = "ncws-picker-host";
+  const Sr = "swwc-picker-host";
   let Ct = null;
   let se = null;
   let It = null;
@@ -369,8 +369,8 @@
     fieldName: "",
     selector: "",
     matchCount: 0,
-    onConfirm: () => {},
-    onCancel: () => {}
+    onConfirm: () => { },
+    onCancel: () => { }
   };
   function Me(e) {
     xt = {
@@ -426,13 +426,13 @@
         `}
       </div>
       <div class="picker-actions">
-        <button class="picker-btn picker-btn-confirm" id="ncws-confirm">Confirm</button>
-        <button class="picker-btn picker-btn-cancel" id="ncws-cancel">Cancel</button>
+        <button class="picker-btn picker-btn-confirm" id="swwc-confirm">Confirm</button>
+        <button class="picker-btn picker-btn-cancel" id="swwc-cancel">Cancel</button>
       </div>
     </div>
   `;
-    const e = It.querySelector("#ncws-confirm");
-    const a = It.querySelector("#ncws-cancel");
+    const e = It.querySelector("#swwc-confirm");
+    const a = It.querySelector("#swwc-cancel");
     if (e != null) {
       e.addEventListener("click", t => {
         t.stopPropagation();
@@ -658,7 +658,7 @@
           return o[1];
         }
       }
-    } catch {}
+    } catch { }
     return null;
   }
   function Cr(e) {
@@ -802,8 +802,8 @@
     }
   }
   function He(e) {
-    const a = document.getElementById("ncws-highlight-host");
-    const t = document.getElementById("ncws-picker-host");
+    const a = document.getElementById("swwc-highlight-host");
+    const t = document.getElementById("swwc-picker-host");
     return a != null && !!a.contains(e) || e === a || t != null && !!t.contains(e) || e === t;
   }
   function Ir(e, a, t) {
@@ -1023,7 +1023,7 @@
           if (w.querySelectorAll(b).length === 1) {
             f++;
           }
-        } catch {}
+        } catch { }
       }
       if (f < Math.min(2, t.length)) {
         return;
@@ -1208,7 +1208,7 @@
               p += `:nth-of-type(${v})`;
             }
           }
-        } catch {}
+        } catch { }
       }
       s.unshift(p);
       if (s.length <= 8) {
@@ -1275,14 +1275,14 @@
           if (document.querySelectorAll(c).length === 1) {
             return c;
           }
-        } catch {}
+        } catch { }
       }
       const i = `${a}.${t.join(".")}`;
       try {
         if (document.querySelectorAll(i).length === 1) {
           return i;
         }
-      } catch {}
+      } catch { }
     }
     const o = [];
     let s = e;
@@ -1406,8 +1406,8 @@
     return t.display !== "none" && t.visibility !== "hidden";
   }
   function Ke(e) {
-    const a = document.getElementById("ncws-highlight-host");
-    const t = document.getElementById("ncws-picker-host");
+    const a = document.getElementById("swwc-highlight-host");
+    const t = document.getElementById("swwc-picker-host");
     return a != null && !!a.contains(e) || e === a || t != null && !!t.contains(e) || e === t;
   }
   function Xe(e) {
@@ -1484,7 +1484,7 @@
     Et();
     try {
       xe(a.itemSelector, "#16A34A");
-    } catch {}
+    } catch { }
     const o = {
       type: a.type.toLowerCase(),
       containerSelector: a.containerSelector,
@@ -1561,7 +1561,7 @@
               }
               o ||= h;
             }
-          } catch {}
+          } catch { }
         }
       }
       a = s;
@@ -1754,7 +1754,7 @@
                 }]
               };
             }
-          } catch {}
+          } catch { }
         }
       }
       a = o;
@@ -1778,7 +1778,7 @@
         if (a.querySelectorAll(`:scope > ${r}`).length > 1) {
           return `${Zr(a)} > ${r}`;
         }
-      } catch {}
+      } catch { }
     }
     return null;
   }
@@ -1791,7 +1791,7 @@
         let n = null;
         try {
           n = s.querySelector(i.relativeSelector);
-        } catch {}
+        } catch { }
         r[i.name] = n ? ge(n, i.attribute) : "";
       });
       if (Object.values(r).some(i => i.trim())) {
@@ -1852,7 +1852,7 @@
                 return r[1];
               }
             }
-          } catch {}
+          } catch { }
           return "";
         }
       default:
@@ -1883,7 +1883,7 @@
               i = `${i}:nth-of-type(${m})`;
             }
           }
-        } catch {}
+        } catch { }
       }
       t.unshift(i);
       if (t.length <= 4) {
@@ -1892,7 +1892,7 @@
           if (a.querySelectorAll(c).length === 1) {
             return c;
           }
-        } catch {}
+        } catch { }
       }
       o = o.parentElement;
     }
@@ -1972,7 +1972,7 @@
             }
           }
         }
-      } catch {}
+      } catch { }
     });
     return a;
   }
@@ -1989,7 +1989,7 @@
           if (document.querySelectorAll(n).length === 1) {
             return n;
           }
-        } catch {}
+        } catch { }
       }
     }
     let o = e;
@@ -2070,7 +2070,7 @@
         if (document.querySelectorAll(r).length === 1) {
           return r;
         }
-      } catch {}
+      } catch { }
     }
     const o = e.getAttribute("aria-label");
     if (o) {
@@ -2233,7 +2233,7 @@
           itemCount: b,
           fields: f
         });
-      } catch {}
+      } catch { }
     });
     return e;
   }
@@ -2380,7 +2380,7 @@
         if (a.querySelectorAll(i).length === 1) {
           return i;
         }
-      } catch {}
+      } catch { }
     }
     if (o.length > 1) {
       const i = `${t}.${o.join(".")}`;
@@ -2388,7 +2388,7 @@
         if (a.querySelectorAll(i).length === 1) {
           return i;
         }
-      } catch {}
+      } catch { }
     }
     for (const i of ["data-testid", "role", "itemprop"]) {
       const n = e.getAttribute(i);
@@ -2398,14 +2398,14 @@
           if (a.querySelectorAll(c).length === 1) {
             return c;
           }
-        } catch {}
+        } catch { }
       }
     }
     try {
       if (a.querySelectorAll(t).length === 1) {
         return t;
       }
-    } catch {}
+    } catch { }
     const s = [];
     let r = e;
     while (r && r !== a) {
@@ -2420,7 +2420,7 @@
         if (a.querySelectorAll(i).length === 1) {
           return i;
         }
-      } catch {}
+      } catch { }
     }
     return null;
   }
@@ -2543,7 +2543,7 @@
           if (document.querySelectorAll(r).length === 1) {
             return r;
           }
-        } catch {}
+        } catch { }
       }
     }
     const o = e.parentElement;
@@ -3136,7 +3136,7 @@
                 for (var h = 0; h < v.length; h++) {
                   try {
                     v[h].error(f);
-                  } catch {}
+                  } catch { }
                 }
                 return true;
               };
@@ -3563,8 +3563,8 @@
                     delete this.files[C];
                   } else {
                     for (var O = this.filter(function (T, q) {
-                        return q.name.slice(0, C.length) === C;
-                      }), P = 0; P < O.length; P++) {
+                      return q.name.slice(0, C.length) === C;
+                    }), P = 0; P < O.length; P++) {
                       delete this.files[O[P].name];
                     }
                   }
@@ -3706,7 +3706,7 @@
                 skip: function (n) {
                   this.setIndex(this.index + n);
                 },
-                byteAt: function () {},
+                byteAt: function () { },
                 readInt: function (n) {
                   var c;
                   var d = 0;
@@ -3721,9 +3721,9 @@
                 readString: function (n) {
                   return r.transformTo("string", this.readData(n));
                 },
-                readData: function () {},
-                lastIndexOfSignature: function () {},
-                readAndCheckSignature: function () {},
+                readData: function () { },
+                lastIndexOfSignature: function () { },
+                readAndCheckSignature: function () { },
                 readDate: function () {
                   var n = this.readInt(4);
                   return new Date(Date.UTC(1980 + (n >> 25 & 127), (n >> 21 & 15) - 1, n >> 16 & 31, n >> 11 & 31, n >> 5 & 63, (n & 31) << 1));
@@ -4058,7 +4058,7 @@
                   }
                   return !i;
                 },
-                flush: function () {},
+                flush: function () { },
                 processChunk: function (i) {
                   this.push(i);
                 },
@@ -4105,7 +4105,7 @@
               if (d.nodestream) {
                 try {
                   m = t("../nodejs/NodejsStreamOutputAdapter");
-                } catch {}
+                } catch { }
               }
               function b(v, h) {
                 return new p.Promise(function (w, g) {
@@ -4673,7 +4673,7 @@
                 });
               };
               s.inherits = function (h, w) {
-                function g() {}
+                function g() { }
                 g.prototype = w.prototype;
                 h.prototype = new g();
               };
@@ -5127,8 +5127,8 @@
                 }
               };
               for (var m = ["asText", "asBinary", "asNodeBuffer", "asUint8Array", "asArrayBuffer"], b = function () {
-                  throw new Error("This method has been removed in JSZip 3.0, please check the upgrade guide.");
-                }, f = 0; f < m.length; f++) {
+                throw new Error("This method has been removed in JSZip 3.0, please check the upgrade guide.");
+              }, f = 0; f < m.length; f++) {
                 r.prototype[m[f]] = b;
               }
               o.exports = r;
@@ -5199,7 +5199,7 @@
             }, {}],
             37: [function (t, o, s) {
               var r = t("immediate");
-              function i() {}
+              function i() { }
               var n = {};
               var c = ["REJECTED"];
               var d = ["FULFILLED"];
@@ -6105,7 +6105,7 @@
                   if (W[($ = N) + M] === nt && W[$ + M - 1] === st && W[$] === W[E] && W[++$] === W[E + 1]) {
                     E += 2;
                     $++;
-                    do ; while (W[++E] === W[++$] && W[++E] === W[++$] && W[++E] === W[++$] && W[++E] === W[++$] && W[++E] === W[++$] && W[++E] === W[++$] && W[++E] === W[++$] && W[++E] === W[++$] && E < K);
+                    do; while (W[++E] === W[++$] && W[++E] === W[++$] && W[++E] === W[++$] && W[++E] === W[++$] && W[++E] === W[++$] && W[++E] === W[++$] && W[++E] === W[++$] && W[++E] === W[++$] && E < K);
                     _ = q - (K - E);
                     E = K - q;
                     if (M < _) {
@@ -6460,7 +6460,7 @@
               }
               r = [new it(0, 0, 0, 0, function (l, N) {
                 var $ = 65535;
-                for ($ > l.pending_buf_size - 5 && ($ = l.pending_buf_size - 5);;) {
+                for ($ > l.pending_buf_size - 5 && ($ = l.pending_buf_size - 5); ;) {
                   if (l.lookahead <= 1) {
                     lt(l);
                     if (l.lookahead === 0 && N === m) {
@@ -6716,7 +6716,7 @@
                       z.match_length = 0;
                       if (z.lookahead >= T && z.strstart > 0 && (H = nt[K = z.strstart - 1]) === nt[++K] && H === nt[++K] && H === nt[++K]) {
                         st = z.strstart + q;
-                        do ; while (H === nt[++K] && H === nt[++K] && H === nt[++K] && H === nt[++K] && H === nt[++K] && H === nt[++K] && H === nt[++K] && H === nt[++K] && K < st);
+                        do; while (H === nt[++K] && H === nt[++K] && H === nt[++K] && H === nt[++K] && H === nt[++K] && H === nt[++K] && H === nt[++K] && H === nt[++K] && K < st);
                         z.match_length = q - (st - K);
                         if (z.match_length > z.lookahead) {
                           z.match_length = z.lookahead;
@@ -8919,7 +8919,7 @@
   }
   var ln = an();
   const cn = sn(ln);
-  const dn = "ncws-datatable-host";
+  const dn = "swwc-datatable-host";
   let wt = null;
   let Q = null;
   let mt = "";
@@ -9067,36 +9067,36 @@
         ${At() ? "" : `<span class="dt-badge">${ot.length} columns</span>`}
       </div>
       <div class="dt-header-actions">
-        ${At() ? `<button class="dt-export-btn" id="ncws-dt-zip" title="Download all images as ZIP">
+        ${At() ? `<button class="dt-export-btn" id="swwc-dt-zip" title="Download all images as ZIP">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
             <path d="M7 1v9M4 7l3 3 3-3M2 12h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
           ZIP
         </button>` : ""}
-        <button class="dt-export-btn" id="ncws-dt-xlsx" title="Export to Excel">
+        <button class="dt-export-btn" id="swwc-dt-xlsx" title="Export to Excel">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
             <path d="M7 1v9M4 7l3 3 3-3M2 12h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
           Excel
         </button>
-        <button class="dt-export-btn" id="ncws-dt-csv" title="Export to CSV">
+        <button class="dt-export-btn" id="swwc-dt-csv" title="Export to CSV">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
             <path d="M7 1v9M4 7l3 3 3-3M2 12h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
           CSV
         </button>
-        <button class="dt-export-btn" id="ncws-dt-json" title="Export to JSON">
+        <button class="dt-export-btn" id="swwc-dt-json" title="Export to JSON">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
             <path d="M4 2C3 2 2 3 2 4v2c0 1-1 1-1 1s1 0 1 1v2c0 1 1 2 2 2M10 2c1 0 2 1 2 2v2c0 1 1 1 1 1s-1 0-1 1v2c0 1-1 2-2 2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
           JSON
         </button>
-        <button class="dt-close" id="ncws-dt-minimize" title="Minimize">
+        <button class="dt-close" id="swwc-dt-minimize" title="Minimize">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
             <path d="M4 8h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
           </svg>
         </button>
-        <button class="dt-close" id="ncws-dt-close" title="Close (Esc)">
+        <button class="dt-close" id="swwc-dt-close" title="Close (Esc)">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
             <path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
           </svg>
@@ -9117,15 +9117,15 @@
           <circle cx="6" cy="6" r="4.5" stroke="currentColor" stroke-width="1.5" />
           <path d="M9.5 9.5L13 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
         </svg>
-        <input class="dt-search-input" type="text" placeholder="Search rows..." id="ncws-dt-search" value="${ft(mt)}" />
-        ${mt ? `<button class="dt-search-clear" id="ncws-dt-clear">
+        <input class="dt-search-input" type="text" placeholder="Search rows..." id="swwc-dt-search" value="${ft(mt)}" />
+        ${mt ? `<button class="dt-search-clear" id="swwc-dt-clear">
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
             <path d="M3 3l6 6M9 3l-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
           </svg>
         </button>` : ""}
       </div>
       <div class="dt-view-toggle">
-        ${o ? `<button class="dt-view-btn${t}" id="ncws-dt-view-grid" title="Grid view">
+        ${o ? `<button class="dt-view-btn${t}" id="swwc-dt-view-grid" title="Grid view">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
             <rect x="1.5" y="1.5" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2" />
             <rect x="9.5" y="1.5" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2" />
@@ -9133,12 +9133,12 @@
             <rect x="9.5" y="9.5" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2" />
           </svg>
         </button>` : ""}
-        <button class="dt-view-btn${e}" id="ncws-dt-view-table" title="Table view">
+        <button class="dt-view-btn${e}" id="swwc-dt-view-table" title="Table view">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
             <path d="M2 3h12M2 6.5h12M2 10h12M2 13.5h12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" />
           </svg>
         </button>
-        <button class="dt-view-btn${a}" id="ncws-dt-view-row" title="Row view">
+        <button class="dt-view-btn${a}" id="swwc-dt-view-row" title="Row view">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
             <rect x="2" y="2" width="12" height="4" rx="1" stroke="currentColor" stroke-width="1.2" />
             <rect x="2" y="10" width="12" height="4" rx="1" stroke="currentColor" stroke-width="1.2" />
@@ -9202,7 +9202,7 @@
       }).join("");
     }
     return `
-    <div class="dt-table-wrap" id="ncws-dt-table-wrap">
+    <div class="dt-table-wrap" id="swwc-dt-table-wrap">
       <table class="dt-table" style="width:${a}px">
         <thead>
           <tr>
@@ -9410,7 +9410,7 @@
   }
   function kn() {
     return `
-    <div class="dt-minimized-bar" id="ncws-dt-minimized-bar">
+    <div class="dt-minimized-bar" id="swwc-dt-minimized-bar">
       <div class="dt-minimized-left">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
           <rect x="1" y="1" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.2" />
@@ -9420,13 +9420,13 @@
         <span class="dt-badge">${bt.length} rows</span>
       </div>
       <div class="dt-minimized-actions">
-        <button class="dt-minimized-restore" id="ncws-dt-restore" title="Restore">
+        <button class="dt-minimized-restore" id="swwc-dt-restore" title="Restore">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
             <rect x="1" y="3" width="10" height="10" rx="1.5" stroke="currentColor" stroke-width="1.2" />
             <path d="M3 3V2a1 1 0 011-1h9a1 1 0 011 1v9a1 1 0 01-1 1h-1" stroke="currentColor" stroke-width="1.2" />
           </svg>
         </button>
-        <button class="dt-minimized-close" id="ncws-dt-min-close" title="Close">
+        <button class="dt-minimized-close" id="swwc-dt-min-close" title="Close">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
             <path d="M3 3l8 8M11 3l-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
           </svg>
@@ -9453,9 +9453,9 @@
       const n = document.createElement("div");
       n.innerHTML = kn();
       Q.appendChild(n);
-      const c = Q.getElementById("ncws-dt-restore");
-      const d = Q.getElementById("ncws-dt-minimized-bar");
-      const p = Q.getElementById("ncws-dt-min-close");
+      const c = Q.getElementById("swwc-dt-restore");
+      const d = Q.getElementById("swwc-dt-minimized-bar");
+      const p = Q.getElementById("swwc-dt-min-close");
       if (d != null) {
         d.addEventListener("click", m => {
           if (!m.target.closest(".dt-minimized-close")) {
@@ -9509,13 +9509,13 @@
         Yt();
       }
     });
-    const a = Q.getElementById("ncws-dt-close");
+    const a = Q.getElementById("swwc-dt-close");
     if (a != null) {
       a.addEventListener("click", () => Yt());
     }
   }
   function En() {
-    const e = Q.getElementById("ncws-dt-search");
+    const e = Q.getElementById("swwc-dt-search");
     if (e != null) {
       e.focus();
     }
@@ -9528,7 +9528,7 @@
         pt();
       });
     }
-    const a = Q.getElementById("ncws-dt-clear");
+    const a = Q.getElementById("swwc-dt-clear");
     if (a != null) {
       a.addEventListener("click", () => {
         mt = "";
@@ -9537,9 +9537,9 @@
     }
   }
   function Cn() {
-    const e = Q.getElementById("ncws-dt-view-grid");
-    const a = Q.getElementById("ncws-dt-view-table");
-    const t = Q.getElementById("ncws-dt-view-row");
+    const e = Q.getElementById("swwc-dt-view-grid");
+    const a = Q.getElementById("swwc-dt-view-table");
+    const t = Q.getElementById("swwc-dt-view-row");
     if (e != null) {
       e.addEventListener("click", () => {
         if (gt !== "grid") {
@@ -9576,7 +9576,7 @@
     });
   }
   function zn() {
-    const e = Q.getElementById("ncws-dt-minimize");
+    const e = Q.getElementById("swwc-dt-minimize");
     if (e != null) {
       e.addEventListener("click", () => {
         Mt = true;
@@ -9660,19 +9660,19 @@
     });
   }
   function Ln() {
-    const e = Q.getElementById("ncws-dt-xlsx");
+    const e = Q.getElementById("swwc-dt-xlsx");
     if (e != null) {
       e.addEventListener("click", () => ar("xlsx"));
     }
-    const a = Q.getElementById("ncws-dt-csv");
+    const a = Q.getElementById("swwc-dt-csv");
     if (a != null) {
       a.addEventListener("click", () => ar("csv"));
     }
-    const t = Q.getElementById("ncws-dt-json");
+    const t = Q.getElementById("swwc-dt-json");
     if (t != null) {
       t.addEventListener("click", () => Nn());
     }
-    const o = Q.getElementById("ncws-dt-zip");
+    const o = Q.getElementById("swwc-dt-zip");
     if (o != null) {
       o.addEventListener("click", () => Dn());
     }
@@ -9691,7 +9691,7 @@
     }
   }
   function Tn() {
-    const e = Q.getElementById("ncws-dt-table-wrap");
+    const e = Q.getElementById("swwc-dt-table-wrap");
     if (e) {
       e.addEventListener("scroll", () => {
         if (e.scrollTop > 0) {
@@ -9834,7 +9834,7 @@
     if (e.length === 0) {
       return;
     }
-    const a = Q == null ? undefined : Q.getElementById("ncws-dt-zip");
+    const a = Q == null ? undefined : Q.getElementById("swwc-dt-zip");
     if (a) {
       a.textContent = "Downloading...";
       a.disabled = true;
@@ -9853,7 +9853,7 @@
             const m = t.file(p) ? `${o}_${p}` : p;
             t.file(m, d);
           }
-        } catch {}
+        } catch { }
         o++;
         if (a) {
           a.textContent = `${o}/${e.length}...`;
@@ -9872,7 +9872,7 @@
       document.body.removeChild(i);
       URL.revokeObjectURL(r);
     } catch (t) {
-      console.error("[NCWS] ZIP download error:", t);
+      console.error("[SWWC] ZIP download error:", t);
     } finally {
       if (a) {
         a.innerHTML = "<svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\"><path d=\"M7 1v9M4 7l3 3 3-3M2 12h10\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /></svg> ZIP";
@@ -10153,12 +10153,12 @@
           });
       }
     } catch (t) {
-      console.error("[NCWS] Content script error:", t);
+      console.error("[SWWC] Content script error:", t);
       a({
         error: String(t)
       });
     }
   }
   Mn();
-  console.log("[NCWS] Content script loaded");
+  console.log("[SWWC] Content script loaded");
 })();

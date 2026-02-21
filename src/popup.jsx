@@ -4,7 +4,7 @@ function PopupHeader({
   url: currentUrl
 }) {
   const shortUrl = currentUrl.length > 45 ? currentUrl.substring(0, 45) + "..." : currentUrl;
-  return <div className="popup-header">{<div className="popup-header-top">{<div className="popup-logo">{<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">{<rect width="24" height="24" rx="6" fill="#4F46E5" />}{<path d="M7 8h10M7 12h7M7 16h10" stroke="white" strokeWidth="2" strokeLinecap="round" />}</svg>}{<span className="popup-title">No Code Web Scraper</span>}</div>}</div>}{currentUrl && <div className="popup-url" title={currentUrl}>{shortUrl}</div>}</div>;
+  return <div className="popup-header">{<div className="popup-header-top">{<div className="popup-logo">{<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">{<rect width="24" height="24" rx="6" fill="#4F46E5" />}{<path d="M7 8h10M7 12h7M7 16h10" stroke="white" strokeWidth="2" strokeLinecap="round" />}</svg>}{<span className="popup-title">Scrape Web Without Code</span>}</div>}</div>}{currentUrl && <div className="popup-url" title={currentUrl}>{shortUrl}</div>}</div>;
 }
 function QuickActions({
   tabId: activeTabId
@@ -80,8 +80,8 @@ function RecipeListSection({
   };
   if (isLoading) {
     return <div className="recipe-list-section">{<div className="section-title">Saved Recipes</div>}{<div className="flex items-center justify-center" style={{
-        padding: "var(--space-xl)"
-      }}>{<div className="spinner" />}</div>}</div>;
+      padding: "var(--space-xl)"
+    }}>{<div className="spinner" />}</div>}</div>;
   } else {
     return <div className="recipe-list-section">{<div className="section-title">Saved Recipes</div>}{recipes.length === 0 ? <div className="empty-state">{<div className="empty-state-text">No saved recipes yet</div>}</div> : <div className="recipe-list">{recipes.map(recipe => <RecipeCard recipe={recipe} onRun={() => handleRunRecipe(recipe)} onDelete={() => handleDeleteRecipe(recipe.id)} />)}</div>}</div>;
   }

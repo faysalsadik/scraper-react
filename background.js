@@ -24773,7 +24773,7 @@ async function validateTabId(e) {
       });
       return true;
     } catch (t) {
-      console.error("[NCWS] Failed to inject content script:", t);
+      console.error("[SWWC] Failed to inject content script:", t);
       return false;
     }
   }
@@ -24828,7 +24828,7 @@ async function a2(e, t) {
       }
     });
   } catch (n) {
-    console.error("[NCWS] Multi-scrape error:", n);
+    console.error("[SWWC] Multi-scrape error:", n);
     chrome.runtime.sendMessage({
       action: "SCRAPE_RESULT",
       payload: {
@@ -24930,7 +24930,7 @@ async function n2(e, t) {
       }
     });
   } catch (f) {
-    console.error("[NCWS] Scroll-scrape error:", f);
+    console.error("[SWWC] Scroll-scrape error:", f);
     chrome.runtime.sendMessage({
       action: "SCRAPE_RESULT",
       payload: {
@@ -24996,7 +24996,7 @@ async function i2(e, t, r) {
       }
     });
   } catch (n) {
-    console.error("[NCWS] Page details scrape error:", n);
+    console.error("[SWWC] Page details scrape error:", n);
     chrome.runtime.sendMessage({
       action: "SCRAPE_RESULT",
       payload: {
@@ -25065,7 +25065,7 @@ async function s2(e, t) {
       }
     });
   } catch (s) {
-    console.error("[NCWS] Paginated image scrape error:", s);
+    console.error("[SWWC] Paginated image scrape error:", s);
     chrome.runtime.sendMessage({
       action: "SCRAPE_RESULT",
       payload: {
@@ -25161,7 +25161,7 @@ async function f2(e, t, r) {
       }
     });
   } catch (i) {
-    console.error("[NCWS] Scroll image scrape error:", i);
+    console.error("[SWWC] Scroll image scrape error:", i);
     chrome.runtime.sendMessage({
       action: "SCRAPE_RESULT",
       payload: {
@@ -25671,14 +25671,14 @@ async function handleMessage(e, t, r) {
         }
     }
   } catch (a) {
-    console.error("[NCWS] Message handler error:", a);
+    console.error("[SWWC] Message handler error:", a);
     r({
       error: String(a)
     });
   }
 }
 chrome.runtime.onInstalled.addListener(async () => {
-  console.log("[NCWS] Extension installed");
+  console.log("[SWWC] Extension installed");
   await Ls();
 });
 chrome.runtime.onMessage.addListener((e, t, r) => {
@@ -25686,7 +25686,7 @@ chrome.runtime.onMessage.addListener((e, t, r) => {
     try {
       await handleMessage(e, t, r);
     } catch (a) {
-      console.error("[NCWS] Top-level message error:", a);
+      console.error("[SWWC] Top-level message error:", a);
       r({
         error: String(a)
       });

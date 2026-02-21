@@ -1,10 +1,10 @@
 const StorageKeys = {
-  RECIPES: "ncws_recipes",
-  SETTINGS: "ncws_settings",
-  LAST_SESSION: "ncws_last_session",
-  TRIAL_START: "ncws_trial_start",
-  LICENCE_KEY: "ncws_licence_key",
-  LICENCE_DATA: "ncws_licence_data"
+  RECIPES: "swwc_recipes",
+  SETTINGS: "swwc_settings",
+  LAST_SESSION: "swwc_last_session",
+  TRIAL_START: "swwc_trial_start",
+  LICENCE_KEY: "swwc_licence_key",
+  LICENCE_DATA: "swwc_licence_data"
 };
 async function getStorageItem(key) {
   return (await chrome.storage.local.get(key))[key];

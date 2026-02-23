@@ -1,0 +1,39 @@
+Based on the code in validateLicence(), here's the expected response format from the remote API:
+
+Request
+POST https://technofelia.com/api/validate-licence
+Content-Type: application/json
+
+{
+  "licence_key": "XXXX-XXXX-XXXX-XXXX"
+}
+Expected Success Response
+{
+  "valid": true,
+  "licence": {
+    "email": "user@example.com",
+    "status": "active",
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  }
+}
+Expected Error Response
+{
+  "valid": false,
+  "error": "Invalid licence key"
+}
+How Response is Processed (lines 69-85)
+The code checks:
+
+responseData.valid must be true
+responseData.licence must exist and contain email, status, and createdAt
+If valid, it saves the license data to Chrome storage:
+
+const savedLicenceData = {
+  email: responseData.licence.email,
+  status: responseData.licence.status,
+  createdAt: responseData.licence.createdAt
+};
+If invalid or network error occurs, it returns:
+
+{ valid: false, error: "Invalid licence key" }
+{ valid: false, error: "Network error. Please check your connection." }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Detection - No Code Web Scraper Docs</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="docs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header"><div class="container"><nav class="nav"><a href="../index.html" class="logo">No Code Web Scraper</a><ul class="nav-links"><li><a href="../index.html#features">Features</a></li><li><a href="../index.html#pricing">Pricing</a></li><li><a href="../index.html#faq">FAQ</a></li><li><a href="#" class="btn btn-primary">Install Now</a></li></ul></nav></div></header>
+    <div class="docs-container">
+        <aside class="docs-sidebar">
+            <div class="sidebar-section"><h3>Getting Started</h3><ul><li><a href="index.html">Introduction</a></li><li><a href="installation.html">Installation</a></li><li><a href="quick-start.html">Quick Start</a></li></ul></div>
+            <div class="sidebar-section"><h3>Core Features</h3><ul><li><a href="element-picker.html">Element Picker</a></li><li><a href="auto-detection.html" class="active">Auto Detection</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="field-types.html">Field Types</a></li></ul></div>
+            <div class="sidebar-section"><h3>Scraping</h3><ul><li><a href="single-page.html">Single Page Scraping</a></li><li><a href="pagination.html">Multi-Page Scraping</a></li><li><a href="infinite-scroll.html">Infinite Scroll</a></li><li><a href="prebuilt-recipes.html">Pre-built Recipes</a></li></ul></div>
+            <div class="sidebar-section"><h3>Tools</h3><ul><li><a href="list-extractor.html">List Extraction</a></li><li><a href="page-details.html">Page Details</a></li><li><a href="image-downloader.html">Image Extraction</a></li></ul></div>
+            <div class="sidebar-section"><h3>Export</h3><ul><li><a href="export-csv.html">Export to CSV</a></li><li><a href="export-excel.html">Export to Excel</a></li></ul></div>
+        </aside>
+        <main class="docs-content">
+            <h1>Auto Detection</h1>
+            <p class="docs-intro">The auto-detection engine scans the page and automatically identifies scrapeable data structures, saving you time on common page layouts. Instead of picking elements one by one, let the extension find the data for you.</p>
+            <h2>How to use it</h2>
+            <div class="step"><div class="step-number">1</div><div class="step-content"><h3>Open the side panel</h3><p>Navigate to the page you want to scrape and open the extension.</p></div></div>
+            <div class="step"><div class="step-number">2</div><div class="step-content"><h3>Click "Auto Detect"</h3><p>The extension scans the DOM for repeating patterns and structured data.</p></div></div>
+            <div class="step"><div class="step-number">3</div><div class="step-content"><h3>Review suggested fields</h3><p>Fields are automatically created with smart names based on context. You can rename, remove, or add more fields.</p></div></div>
+            <h2>What it detects</h2>
+            <ul class="docs-list">
+                <li><strong>HTML tables</strong> — standard table elements with headers and rows. Column headers are used as field names.</li>
+                <li><strong>Lists</strong> — ordered and unordered lists with consistent item structure.</li>
+                <li><strong>Grid layouts</strong> — CSS grid and flexbox repeating patterns like product cards, job listings, and search results.</li>
+                <li><strong>Card layouts</strong> — repeated div structures with similar child elements (titles, images, prices, etc.).</li>
+            </ul>
+            <h2>Smart field naming</h2>
+            <p>The extension analyzes each detected field and assigns a meaningful name based on context:</p>
+            <ul class="docs-list">
+                <li>Elements containing currency symbols are labeled as "Price"</li>
+                <li>Large headings are labeled as "Title" or "Name"</li>
+                <li>Image elements are labeled as "Image"</li>
+                <li>Links are labeled as "URL"</li>
+                <li>Longer text blocks are labeled as "Description"</li>
+            </ul>
+            <p>Auto detection works best on pages with repeating, structured content like product listings, directories, and search results. You can always fine-tune the results using the element picker.</p>
+            <div class="docs-nav"><a href="element-picker.html" class="docs-next">← Previous: Element Picker</a><a href="recipes.html" class="docs-next" style="margin-left:16px">Next: Recipes →</a></div>
+        </main>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

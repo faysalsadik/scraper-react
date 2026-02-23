@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Field Types - No Code Web Scraper Docs</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="docs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header"><div class="container"><nav class="nav"><a href="../index.html" class="logo">No Code Web Scraper</a><ul class="nav-links"><li><a href="../index.html#features">Features</a></li><li><a href="../index.html#pricing">Pricing</a></li><li><a href="../index.html#faq">FAQ</a></li><li><a href="#" class="btn btn-primary">Install Now</a></li></ul></nav></div></header>
+    <div class="docs-container">
+        <aside class="docs-sidebar">
+            <div class="sidebar-section"><h3>Getting Started</h3><ul><li><a href="index.html">Introduction</a></li><li><a href="installation.html">Installation</a></li><li><a href="quick-start.html">Quick Start</a></li></ul></div>
+            <div class="sidebar-section"><h3>Core Features</h3><ul><li><a href="element-picker.html">Element Picker</a></li><li><a href="auto-detection.html">Auto Detection</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="field-types.html" class="active">Field Types</a></li></ul></div>
+            <div class="sidebar-section"><h3>Scraping</h3><ul><li><a href="single-page.html">Single Page Scraping</a></li><li><a href="pagination.html">Multi-Page Scraping</a></li><li><a href="infinite-scroll.html">Infinite Scroll</a></li><li><a href="prebuilt-recipes.html">Pre-built Recipes</a></li></ul></div>
+            <div class="sidebar-section"><h3>Tools</h3><ul><li><a href="list-extractor.html">List Extraction</a></li><li><a href="page-details.html">Page Details</a></li><li><a href="image-downloader.html">Image Extraction</a></li></ul></div>
+            <div class="sidebar-section"><h3>Export</h3><ul><li><a href="export-csv.html">Export to CSV</a></li><li><a href="export-excel.html">Export to Excel</a></li></ul></div>
+        </aside>
+        <main class="docs-content">
+            <h1>Field Types</h1>
+            <p class="docs-intro">Each field in a recipe has a type that determines what data is extracted from the matched elements.</p>
+            <table class="docs-table">
+                <thead><tr><th>Type</th><th>Description</th><th>Example</th></tr></thead>
+                <tbody>
+                    <tr><td><code>text</code></td><td>Extracts the visible text content of the element</td><td>Product names, titles, descriptions</td></tr>
+                    <tr><td><code>link</code></td><td>Extracts the <code>href</code> attribute from anchor tags</td><td>URLs, navigation links</td></tr>
+                    <tr><td><code>image</code></td><td>Extracts the <code>src</code> attribute from image elements</td><td>Product images, thumbnails</td></tr>
+                    <tr><td><code>number</code></td><td>Extracts text and parses it as a number</td><td>Prices, ratings, counts</td></tr>
+                    <tr><td><code>html</code></td><td>Extracts the raw innerHTML of the element</td><td>Rich text content, embedded markup</td></tr>
+                </tbody>
+            </table>
+            <div class="docs-nav"><a href="recipes.html" class="docs-next">← Previous: Recipes</a><a href="single-page.html" class="docs-next" style="margin-left:16px">Next: Single Page Scraping →</a></div>
+        </main>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

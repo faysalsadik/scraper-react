@@ -55,6 +55,6 @@ export function LicencePage({
           }} disabled={r === "validating"} />}{<button className="btn btn-primary licence-activate-btn" onClick={A} disabled={!x.trim() || r === "validating"}>{r === "validating" ? <>{<div className="spinner" style={{
                 width: 14,
                 height: 14
-              }} />} Validating...</> : "Activate"}</button>}</div>}{r === "error" && <div className="licence-error">{v}</div>}{<a className="licence-buy-link" href="https://nocodewebscraper.com" target="_blank" rel="noopener noreferrer">Don't have a licence? Get one here</a>}{!trialExpired && <button className="btn btn-ghost licence-back-btn" onClick={onBack}>Back to Scraper</button>}</div>}</div>;
+              }} />} Validating...</> : "Activate"}</button>}</div>}{r === "error" && <div className="licence-error">{v}</div>}{<a className="licence-buy-link" href="https://technofelia.com" target="_blank" rel="noopener noreferrer">Don't have a licence? Get one here</a>}{!trialExpired && <button className="btn btn-ghost licence-back-btn" onClick={onBack}>Back to Scraper</button>}</div>}</div>;
   }
 }

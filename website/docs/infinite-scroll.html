@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Scroll - No Code Web Scraper Docs</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="docs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header"><div class="container"><nav class="nav"><a href="../index.html" class="logo">No Code Web Scraper</a><ul class="nav-links"><li><a href="../index.html#features">Features</a></li><li><a href="../index.html#pricing">Pricing</a></li><li><a href="../index.html#faq">FAQ</a></li><li><a href="#" class="btn btn-primary">Install Now</a></li></ul></nav></div></header>
+    <div class="docs-container">
+        <aside class="docs-sidebar">
+            <div class="sidebar-section"><h3>Getting Started</h3><ul><li><a href="index.html">Introduction</a></li><li><a href="installation.html">Installation</a></li><li><a href="quick-start.html">Quick Start</a></li></ul></div>
+            <div class="sidebar-section"><h3>Core Features</h3><ul><li><a href="element-picker.html">Element Picker</a></li><li><a href="auto-detection.html">Auto Detection</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="field-types.html">Field Types</a></li></ul></div>
+            <div class="sidebar-section"><h3>Scraping</h3><ul><li><a href="single-page.html">Single Page Scraping</a></li><li><a href="pagination.html">Multi-Page Scraping</a></li><li><a href="infinite-scroll.html" class="active">Infinite Scroll</a></li><li><a href="prebuilt-recipes.html">Pre-built Recipes</a></li></ul></div>
+            <div class="sidebar-section"><h3>Tools</h3><ul><li><a href="list-extractor.html">List Extraction</a></li><li><a href="page-details.html">Page Details</a></li><li><a href="image-downloader.html">Image Extraction</a></li></ul></div>
+            <div class="sidebar-section"><h3>Export</h3><ul><li><a href="export-csv.html">Export to CSV</a></li><li><a href="export-excel.html">Export to Excel</a></li></ul></div>
+        </aside>
+        <main class="docs-content">
+            <h1>Infinite Scroll</h1>
+            <p class="docs-intro">Many modern websites load content dynamically as you scroll down — social media feeds, image galleries, and product catalogs. The infinite scroll mode handles this automatically by scrolling the page and waiting for new content to appear.</p>
+            <h2>How to set it up</h2>
+            <div class="step"><div class="step-number">1</div><div class="step-content"><h3>Create your recipe</h3><p>Set up your fields using the element picker or auto detection, just like any other scrape.</p></div></div>
+            <div class="step"><div class="step-number">2</div><div class="step-content"><h3>Enable pagination</h3><p>Open the Pagination tab and select <strong>Infinite Scroll</strong> as the pagination type.</p></div></div>
+            <div class="step"><div class="step-number">3</div><div class="step-content"><h3>Configure limits</h3><p>Set the max number of scroll cycles and the delay between each scroll to give the page time to load new content.</p></div></div>
+            <div class="step"><div class="step-number">4</div><div class="step-content"><h3>Start scraping</h3><p>Click scrape and the extension handles the rest — scrolling, waiting, extracting, and deduplicating.</p></div></div>
+            <h2>How it works under the hood</h2>
+            <ul class="docs-list">
+                <li>The extension scrolls to the bottom of the page</li>
+                <li>Waits for new content to load (based on your configured delay)</li>
+                <li>Extracts newly appeared elements that match your selectors</li>
+                <li>Deduplicates rows automatically to avoid capturing the same data twice</li>
+                <li>Repeats until the max scroll limit is reached or no new content appears</li>
+            </ul>
+            <h2>Best practices</h2>
+            <ul class="docs-list">
+                <li><strong>Set a reasonable delay</strong> — 2–3 seconds works for most sites. Slower sites may need more time.</li>
+                <li><strong>Start with a small limit</strong> — test with 3–5 scroll cycles first to make sure your selectors work correctly.</li>
+                <li><strong>Check for duplicates</strong> — the extension deduplicates automatically, but verify in the preview table.</li>
+            </ul>
+            <h2>Works great with</h2>
+            <ul class="docs-list">
+                <li>Social media feeds (Twitter/X, LinkedIn, etc.)</li>
+                <li>Image galleries and portfolio sites</li>
+                <li>E-commerce product pages with "Load More" behavior</li>
+                <li>News sites and blog listing pages</li>
+            </ul>
+            <div class="docs-tip"><strong>Tip:</strong> If the page uses traditional pagination with "Next" buttons or page numbers, use <a href="pagination.html">Multi-Page Scraping</a> instead for more reliable results.</div>
+            <div class="docs-nav"><a href="pagination.html" class="docs-next">← Previous: Multi-Page Scraping</a><a href="prebuilt-recipes.html" class="docs-next" style="margin-left:16px">Next: Pre-built Recipes →</a></div>
+        </main>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

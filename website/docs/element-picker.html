@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Picker - No Code Web Scraper Docs</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="docs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header"><div class="container"><nav class="nav"><a href="../index.html" class="logo">No Code Web Scraper</a><ul class="nav-links"><li><a href="../index.html#features">Features</a></li><li><a href="../index.html#pricing">Pricing</a></li><li><a href="../index.html#faq">FAQ</a></li><li><a href="#" class="btn btn-primary">Install Now</a></li></ul></nav></div></header>
+    <div class="docs-container">
+        <aside class="docs-sidebar">
+            <div class="sidebar-section"><h3>Getting Started</h3><ul><li><a href="index.html">Introduction</a></li><li><a href="installation.html">Installation</a></li><li><a href="quick-start.html">Quick Start</a></li></ul></div>
+            <div class="sidebar-section"><h3>Core Features</h3><ul><li><a href="element-picker.html" class="active">Element Picker</a></li><li><a href="auto-detection.html">Auto Detection</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="field-types.html">Field Types</a></li></ul></div>
+            <div class="sidebar-section"><h3>Scraping</h3><ul><li><a href="single-page.html">Single Page Scraping</a></li><li><a href="pagination.html">Multi-Page Scraping</a></li><li><a href="infinite-scroll.html">Infinite Scroll</a></li><li><a href="prebuilt-recipes.html">Pre-built Recipes</a></li></ul></div>
+            <div class="sidebar-section"><h3>Tools</h3><ul><li><a href="list-extractor.html">List Extraction</a></li><li><a href="page-details.html">Page Details</a></li><li><a href="image-downloader.html">Image Extraction</a></li></ul></div>
+            <div class="sidebar-section"><h3>Export</h3><ul><li><a href="export-csv.html">Export to CSV</a></li><li><a href="export-excel.html">Export to Excel</a></li></ul></div>
+        </aside>
+        <main class="docs-content">
+            <h1>Element Picker</h1>
+            <p class="docs-intro">The element picker is the core interaction tool. Click the <strong>Pick Element</strong> button in the side panel, then hover over any element on the page. Elements are highlighted as you move your mouse. Click to select.</p>
+            <h2>How to use it</h2>
+            <div class="step"><div class="step-number">1</div><div class="step-content"><h3>Activate the picker</h3><p>Click the "Pick Element" button in the side panel to enter selection mode.</p></div></div>
+            <div class="step"><div class="step-number">2</div><div class="step-content"><h3>Hover to preview</h3><p>Move your mouse over the page. Elements are highlighted in real-time as you hover, showing you exactly what will be captured.</p></div></div>
+            <div class="step"><div class="step-number">3</div><div class="step-content"><h3>Click to capture</h3><p>Click an element to add it as a field. The extension generates a CSS selector and detects all similar elements on the page.</p></div></div>
+            <div class="step"><div class="step-number">4</div><div class="step-content"><h3>Customize the field</h3><p>Rename the field, change the attribute to extract (text, href, src, etc.), or adjust the selector if needed.</p></div></div>
+            <h2>What you can pick</h2>
+            <ul class="docs-list">
+                <li><strong>Text content</strong> — product names, prices, descriptions, headings</li>
+                <li><strong>Links</strong> — URLs from anchor tags</li>
+                <li><strong>Images</strong> — image source URLs</li>
+                <li><strong>Any attribute</strong> — data attributes, classes, IDs, or any HTML attribute</li>
+            </ul>
+            <h2>Smart selector generation</h2>
+            <p>When you click an element, the extension generates a stable CSS selector that targets similar elements across the page. The selector generator:</p>
+            <ul class="docs-list">
+                <li>Prefers class names and semantic attributes over position-based selectors</li>
+                <li>Creates selectors that are resilient to minor page layout changes</li>
+                <li>Automatically detects repeating patterns to match all similar elements</li>
+                <li>Highlights all matched elements so you can verify the selection visually</li>
+            </ul>
+            <p>You can always edit the generated CSS selector manually if you need more precision or want to target a different set of elements.</p>
+            <div class="docs-nav"><a href="quick-start.html" class="docs-next">← Previous: Quick Start</a><a href="auto-detection.html" class="docs-next" style="margin-left:16px">Next: Auto Detection →</a></div>
+        </main>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -17,7 +17,7 @@ async function setStorageItem(key, data) {
 async function removeStorageItem(key) {
   await chrome.storage.local.remove(key);
 }
-const TRIAL_DURATION_MS = 86400000;
+const TRIAL_DURATION_MS = 10*86400000;
 async function initializeTrial() {
   if (!(await getStorageItem(StorageKeys.TRIAL_START))) {
     await setStorageItem(StorageKeys.TRIAL_START, Date.now());
@@ -57,7 +57,7 @@ async function getLicenceState() {
 }
 async function validateLicence(licenceKey) {
   try {
-    const responseData = await (await fetch("https://nocodewebscraper.com/api/validate-licence", {
+    const responseData = await (await fetch("https://technofelia.com/api/validate-licence", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

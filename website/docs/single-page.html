@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Scraping - No Code Web Scraper Docs</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="docs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header"><div class="container"><nav class="nav"><a href="../index.html" class="logo">No Code Web Scraper</a><ul class="nav-links"><li><a href="../index.html#features">Features</a></li><li><a href="../index.html#pricing">Pricing</a></li><li><a href="../index.html#faq">FAQ</a></li><li><a href="#" class="btn btn-primary">Install Now</a></li></ul></nav></div></header>
+    <div class="docs-container">
+        <aside class="docs-sidebar">
+            <div class="sidebar-section"><h3>Getting Started</h3><ul><li><a href="index.html">Introduction</a></li><li><a href="installation.html">Installation</a></li><li><a href="quick-start.html">Quick Start</a></li></ul></div>
+            <div class="sidebar-section"><h3>Core Features</h3><ul><li><a href="element-picker.html">Element Picker</a></li><li><a href="auto-detection.html">Auto Detection</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="field-types.html">Field Types</a></li></ul></div>
+            <div class="sidebar-section"><h3>Scraping</h3><ul><li><a href="single-page.html" class="active">Single Page Scraping</a></li><li><a href="pagination.html">Multi-Page Scraping</a></li><li><a href="infinite-scroll.html">Infinite Scroll</a></li><li><a href="prebuilt-recipes.html">Pre-built Recipes</a></li></ul></div>
+            <div class="sidebar-section"><h3>Tools</h3><ul><li><a href="list-extractor.html">List Extraction</a></li><li><a href="page-details.html">Page Details</a></li><li><a href="image-downloader.html">Image Extraction</a></li></ul></div>
+            <div class="sidebar-section"><h3>Export</h3><ul><li><a href="export-csv.html">Export to CSV</a></li><li><a href="export-excel.html">Export to Excel</a></li></ul></div>
+        </aside>
+        <main class="docs-content">
+            <h1>Single Page Scraping</h1>
+            <p class="docs-intro">Single page scraping is the simplest mode — extract all matching data from the current page in one click. It's the fastest way to grab data when everything you need is on a single page.</p>
+            <h2>How it works</h2>
+            <div class="step"><div class="step-number">1</div><div class="step-content"><h3>Set up your fields</h3><p>Create a recipe with the fields you want to extract using the element picker or auto detection.</p></div></div>
+            <div class="step"><div class="step-number">2</div><div class="step-content"><h3>Click Scrape</h3><p>Hit the scrape button to extract data from all matching elements on the current page.</p></div></div>
+            <div class="step"><div class="step-number">3</div><div class="step-content"><h3>Review in the preview table</h3><p>The results appear instantly in a table view. All matched elements are highlighted on the page so you can verify the data.</p></div></div>
+            <div class="step"><div class="step-number">4</div><div class="step-content"><h3>Export</h3><p>Download your data as CSV or Excel when you're satisfied.</p></div></div>
+            <h2>What to know</h2>
+            <ul class="docs-list">
+                <li>The preview table shows up to <strong>200 rows</strong> in real-time</li>
+                <li>All matched elements are highlighted on the page for visual verification</li>
+                <li>You can add, remove, or edit fields and re-scrape instantly</li>
+                <li>Results are kept in memory until you export or start a new scrape</li>
+            </ul>
+            <h2>When to use single page scraping</h2>
+            <ul class="docs-list">
+                <li>Tables and lists that fit on one page</li>
+                <li>Pages with all data loaded at once (no pagination)</li>
+                <li>Quick data extraction without needing multi-page automation</li>
+                <li>Testing your field selectors before running a larger multi-page scrape</li>
+            </ul>
+            <div class="docs-tip"><strong>Tip:</strong> If the page you're scraping has pagination or loads more content on scroll, check out <a href="pagination.html">Multi-Page Scraping</a> or <a href="infinite-scroll.html">Infinite Scroll</a> for automated extraction across pages.</div>
+            <div class="docs-nav"><a href="field-types.html" class="docs-next">← Previous: Field Types</a><a href="pagination.html" class="docs-next" style="margin-left:16px">Next: Multi-Page Scraping →</a></div>
+        </main>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

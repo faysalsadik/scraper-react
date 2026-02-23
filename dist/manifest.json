@@ -1,7 +1,7 @@
 {
   "update_url": "https://clients2.google.com/service/update2/crx",
   "manifest_version": 3,
-  "name": "Easy No Code Web Scraper",
+  "name": "Easy Web Scraper",
   "version": "1.0.0",
   "description": "Scrape any website visually. Click elements, preview data, export to Excel/CSV. No coding required.",
   "icons": {
@@ -15,7 +15,7 @@
       "16": "icons/icon-16.png",
       "32": "icons/icon-32.png"
     },
-    "default_title": "Easy No Code Web Scraper"
+    "default_title": "Easy Web Scraper"
   },
   "side_panel": {
     "default_path": "sidepanel.html"
